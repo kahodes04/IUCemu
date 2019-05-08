@@ -5,7 +5,6 @@ C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\bin
 C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\bin\Debug\CemuUpdater.pdb
 C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\bin\Debug\HtmlAgilityPack.xml
 C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\bin\Debug\ICSharpCode.SharpZipLib.xml
-C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\obj\Debug\CemuUpdater.csprojAssemblyReference.cache
 C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\obj\Debug\CemuUpdater.csproj.CoreCompileInputs.cache
 C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\obj\Debug\CemuUpdater.csproj.Fody.CopyLocal.cache
 C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\obj\Debug\CemuUpdater.exe.manifest

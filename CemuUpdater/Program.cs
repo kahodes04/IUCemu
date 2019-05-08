@@ -36,9 +36,6 @@ namespace CemuUpdater
                 Console.WriteLine("Installing Cemu.");
             }
                 
-
-            
-
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
             else
@@ -48,7 +45,6 @@ namespace CemuUpdater
                 
             }
 
-            
             Console.WriteLine("Downloading Cemu.");
             downloadCemu();
             Console.WriteLine("Finished downloading Cemu.");
@@ -73,15 +69,10 @@ namespace CemuUpdater
             {
                 Console.WriteLine("Unzipping Cemu.");
                 extractZipFile(@"CACHDTemp\\cemudownload.zip", "password", @"CACHDTemp");
-
                 string[] filePaths = Directory.GetDirectories(path);
-                string executablelocation = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\" + filePaths[0] + "\\Cemu.exe";
-                string moveexecutableto = cemufolder + "\\Cemu.exe";
-
-                //files (only cemu.exe) are found and copied into folder, gotta copy directories too
-
                 string[] files = System.IO.Directory.GetFiles(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\" + filePaths[0]);
                 Console.WriteLine("Moving Cemu files.");
+
                 foreach (string s in files)
                 {
                     string fileName = System.IO.Path.GetFileName(s);
@@ -93,7 +84,6 @@ namespace CemuUpdater
 
                 foreach (string s in files)
                 {
-                    //bug, problem combining strings, combining folder's path i want to move with cemu root folder's path
                     string foldername = new DirectoryInfo(s).Name;
                     string destFile = cemufolder + "\\" + foldername;
                     System.IO.Directory.Move(s, destFile);
