@@ -27,13 +27,13 @@ namespace CemuUpdater
                 update = true;
                 Console.WriteLine("There are files in this folder, this program assumes those are Cemu's files to be updated.");
                 Thread.Sleep(4000);
-                Console.WriteLine("Updating Cemu");
+                Console.WriteLine("Updating Cemu.");
             }
             else
             {
                 Console.WriteLine("There are no files in this folder, this program assumes you want to install Cemu in it.");
                 Thread.Sleep(4000);
-                Console.WriteLine("Installing Cemu");
+                Console.WriteLine("Installing Cemu.");
             }
                 
 
@@ -134,7 +134,6 @@ namespace CemuUpdater
             HtmlDocument htmlDocument = new HtmlDocument();
             htmlDocument.LoadHtml(html);
             string downloadlink = htmlDocument.DocumentNode.SelectSingleNode("//a[@name='download']").GetAttributeValue("href","unknown");
-            string version = htmlDocument.DocumentNode.SelectSingleNode("//p[@class='font-big custom']").InnerText;//.GetAttributeValue("href", "unknown");
             WebClient webclient = new WebClient();
             webclient.DownloadFile(new Uri(downloadlink), @"CACHDTemp\\cemudownload.zip");
         }

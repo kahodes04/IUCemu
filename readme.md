@@ -1,4 +1,4 @@
-# IUCemu
+# IUCemu (Install/Update Cemu)
 
 IUCemu is an application that will install and update Cemu alongside the Cemu Hook plugin.
 
