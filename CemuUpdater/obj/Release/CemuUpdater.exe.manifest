@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CemuUpdater.exe" size="374240">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CemuUpdater.exe" size="375776">
       <assemblyIdentity name="CemuUpdater" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Gm4T/miuyYj6r/JjpkpnnHPARZkbyTArQzmbR96vVls=</dsig:DigestValue>
+        <dsig:DigestValue>ZXGbpExgLxhDPioYPSI/SAwmVSEe4bYekXfeFKZp15w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
