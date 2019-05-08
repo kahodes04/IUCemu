@@ -12,3 +12,4 @@ C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\obj
 C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\obj\Debug\CemuUpdater.csproj.CopyComplete
 C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\obj\Debug\CemuUpdater.exe
 C:\Users\guill\Documents\Visual Studio 2019\Projects\cemuupdater\CemuUpdater\obj\Debug\CemuUpdater.pdb
+C:\Users\guill\Documents\Visual Studio 2019\Projects\CemuUpdater\CemuUpdater\obj\Debug\CemuUpdater.csprojAssemblyReference.cache

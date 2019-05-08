@@ -96,7 +96,7 @@ namespace CemuUpdater
             clearFolder("CACHDTemp");
             Console.WriteLine("Deleting Temp folder.");
             Directory.Delete("CACHDTemp");
-            Console.WriteLine("Done. Press any key to continue.");
+            Console.WriteLine("Done.\nPress any key to continue.");
             Console.ReadKey();
         }
 
