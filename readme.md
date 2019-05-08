@@ -1,5 +1,5 @@
 # IUCemu
-###Cemu emulator manager
+### Cemu emulator manager
 
 IUCemu is an application that will install and update Cemu alongside the Cemu Hook plugin.
 
