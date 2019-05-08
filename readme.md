@@ -15,3 +15,13 @@ First download the executable and place it in an empty folder in which you wish 
 [Html Agility Pack (HAP)](https://github.com/zzzprojects/html-agility-pack)
 
 <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+## Donation
+
+
+
+If this program was useful enough to you, feel free to drop a donation. It would be immensely appreciated!
+
+
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=Y9SMFS4C2AZXS&lc=US&item_name=Podolscripts&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
