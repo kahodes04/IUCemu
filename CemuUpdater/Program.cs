@@ -35,22 +35,43 @@ namespace CemuUpdater
                 Thread.Sleep(4000);
                 Console.WriteLine("Installing Cemu.");
             }
-                
+
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
             else
             {
                 Console.WriteLine("Temp folder already exists, clearing folder.");
                 clearFolder("CACHDTemp");
-                
+
             }
 
             Console.WriteLine("Downloading Cemu.");
             downloadCemu();
             Console.WriteLine("Finished downloading Cemu.");
-            Console.WriteLine("Downloading Cemu Hook.");
-            downloadHook();
-            Console.WriteLine("Finished downloading Cemu Hook.");
+            Console.WriteLine("Would you like to download Cemu Hook? Press 1 for yes or 2 for no.");
+            Boolean loop = true;
+            char key = '\0';
+
+            //flushing buffer
+            while (Console.KeyAvailable)
+            {
+                ConsoleKeyInfo keys = Console.ReadKey(true);
+            }
+
+            while (loop)
+            {
+                key = Console.ReadKey(true).KeyChar;
+                if (key.Equals('1') || key.Equals('2'))
+                    loop = false;
+                Thread.Sleep(250);
+            }
+            if (key.Equals('1'))
+            {
+                Console.WriteLine("Downloading Cemu Hook.");
+                downloadHook();
+                Console.WriteLine("Finished downloading Cemu Hook.");
+            }
+
             int testy = Directory.GetFiles(cemufolder).Length;
 
             if (update)
@@ -62,8 +83,12 @@ namespace CemuUpdater
                 string moveexecutableto = cemufolder + "\\Cemu.exe";
                 Console.WriteLine("Moving Cemu.exe.");
                 File.Copy(executablelocation, moveexecutableto, true);
-                Console.WriteLine("Unzipping Cemu Hook.");
-                extractZipFile(@"CACHDTemp\\hookdownload.zip", "password", cemufolder);
+                if (key.Equals('1'))
+                {
+                    Console.WriteLine("Unzipping Cemu Hook.");
+                    extractZipFile(@"CACHDTemp\\hookdownload.zip", "password", cemufolder);
+                }
+
             }
             else if (!update)
             {
@@ -88,9 +113,12 @@ namespace CemuUpdater
                     string destFile = cemufolder + "\\" + foldername;
                     System.IO.Directory.Move(s, destFile);
                 }
+                if (key.Equals('1'))
+                {
+                    Console.WriteLine("Unzipping Cemu Hook.");
+                    extractZipFile(@"CACHDTemp\\hookdownload.zip", "password", cemufolder);
+                }
 
-                Console.WriteLine("Unzipping Cemu Hook.");
-                extractZipFile(@"CACHDTemp\\hookdownload.zip", "password", cemufolder);
             }
 
             clearFolder("CACHDTemp");
